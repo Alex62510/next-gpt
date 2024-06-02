@@ -27,7 +27,6 @@ const MobileNav = () => {
             <nav className="flex gap-2">
                 <SignedIn>
                     <UserButton afterSignOutUrl="/"/>
-
                     <Sheet>
                         <SheetTrigger>
                             <Image
@@ -46,11 +45,9 @@ const MobileNav = () => {
                                     width={152}
                                     height={23}
                                 />
-
                                 <ul className="header-nav_elements">
                                     {navLinks.map((link) => {
                                         const isActive = link.route === pathname
-
                                         return (
                                             <li
                                                 className={`${isActive && 'gradient-text'} p-18 flex whitespace-nowrap text-dark-700`}
@@ -75,7 +72,6 @@ const MobileNav = () => {
                         </SheetContent>
                     </Sheet>
                 </SignedIn>
-
                 <SignedOut>
                     <Button asChild className="button bg-purple-gradient bg-cover">
                         <Link href={'/sign-in'}>Login</Link>

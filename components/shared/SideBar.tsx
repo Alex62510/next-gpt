@@ -53,7 +53,6 @@ const SideBar = () => {
                                             <Image src={link.icon} alt={'logo'} width={24}
                                                    height={24}
                                                    className={`${isActive && 'brightness-200'}`}>
-
                                             </Image>
                                             {link.label}
                                         </Link>
